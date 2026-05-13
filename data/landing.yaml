@@ -1,0 +1,12 @@
+hero:
+  enable: true
+  weight: 10
+  template: hero
+
+  title: "My Site"
+  subtitle: "Simple, clear documentation for my project."
+
+  ctaButton:
+    icon: rocket_launch
+    btnText: "Get Started"
+    url: "/docs/getting-started"
