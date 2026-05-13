@@ -1,8 +1,6 @@
 ---
-title: "My Site"
-description: "Welcome to my site"
-date: "2026-05-12"
+title: "lintune"
+description: "Self-hosted identity, mail, and storage. One platform."
+date: "2026-05-13"
 draft: false
 ---
-
-Welcome to my site.

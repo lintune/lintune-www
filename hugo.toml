@@ -1,8 +1,9 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://lintune.xyz/'
 locale = 'en-us'
-title = 'My New Hugo Site'
+title = 'lintune'
 contentDir = 'content'
 enableEmoji = true
+enableRobotsTXT = true
 
 [module]
     [[module.imports]]
@@ -14,11 +15,58 @@ enableEmoji = true
 
 [markup]
     [markup.tableOfContents]
-      endLevel = 3
-      startLevel = 1
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true # https://jdhao.github.io/2019/12/29/hugo_html_not_shown/
-  [markup.goldmark.parser]
-    [markup.goldmark.parser.attribute]
-      block = true
+        endLevel = 3
+        startLevel = 1
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+        [markup.goldmark.parser]
+            [markup.goldmark.parser.attribute]
+                block = true
+
+[params]
+    google_fonts = [["Inter", "300, 400, 600, 700"], ["Fira Code", "500, 700"]]
+    sans_serif_font = "Inter"
+    secondary_font = "Inter"
+    mono_font = "Fira Code"
+
+    logo = "images/lintune-mark-light.svg"
+    logoDark = "images/lintune-mark-dark.svg"
+    logoHeight = 36
+    logoWidth = 36
+    logoText = "lintune"
+
+    [params.footer]
+        copyright = "© 2026 lintune"
+        version = false
+
+    [params.social]
+        github = "lintune"
+
+    [params.docs]
+        title = "Lintune Docs"
+        pathName = "docs"
+        themeColor = "green"
+        darkMode = true
+        prism = true
+        breadcrumbs = true
+        editPage = false
+        lastMod = false
+        toc = true
+        tocMobile = true
+        sidebarIcons = true
+
+    [params.flexsearch]
+        enabled = true
+
+[menu]
+    [[menu.primary]]
+        name = "Docs"
+        url = "/docs"
+        identifier = "docs"
+        weight = 10
+    [[menu.primary]]
+        name = "GitHub"
+        url = "https://github.com/lintune"
+        identifier = "github"
+        weight = 20
