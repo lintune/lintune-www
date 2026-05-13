@@ -24,12 +24,12 @@ One platform. Install Keycloak, Mailcow, and Nextcloud in minutes — wired to s
   </a>
 </div>
 
-<p class="hx:mt-5 hx:text-sm hx:text-gray-500 not-prose">
-<a href="https://www.keycloak.org/">keycloak</a> ·
-<a href="https://mailcow.email/">mailcow</a> ·
-<a href="https://github.com/nextcloud/all-in-one">nextcloud</a> ·
-<a href="https://uptimekuma.org/">uptime-kuma</a> ·
-open source · <a href="https://github.com/lintune/lintune-admin/blob/dev/LICENSE">MIT</a>
+<p class="lintune-stack-links hx:mt-5 hx:text-sm hx:text-gray-500 not-prose">
+<a href="https://www.keycloak.org/"><strong>keycloak</strong></a> ·
+<a href="https://mailcow.email/"><strong>mailcow</strong></a> ·
+<a href="https://github.com/nextcloud/all-in-one"><strong>nextcloud</strong></a> ·
+<a href="https://uptimekuma.org/"><strong>uptime-kuma</strong></a> ·
+open source · <a href="https://github.com/lintune/lintune-admin/blob/dev/LICENSE"><strong>MIT</strong></a>
 </p>
 
 <div style="margin-top: 3rem; width: 100%;">

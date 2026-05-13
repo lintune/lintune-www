@@ -23,6 +23,19 @@
   color: #1c1917 !important;
 }
 
+.hextra-feature-card svg {
+  color: #16a34a;
+}
+
+.dark .hextra-feature-card svg {
+  color: #22c55e;
+}
+
+p.lintune-stack-links a:hover {
+  color: #16a34a;
+  transition: color 0.15s;
+}
+
 .hextra-banner button {
   color: #1c1917 !important;
 }
