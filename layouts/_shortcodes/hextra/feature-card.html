@@ -1,0 +1,36 @@
+{{- $title := .Get "title" -}}
+{{- $subtitle := .Get "subtitle" -}}
+{{- $class := .Get "class" -}}
+{{- $image := .Get "image" -}}
+{{- $imageClass := .Get "imageClass" -}}
+{{- $style := .Get "style" -}}
+{{- $icon := .Get "icon" -}}
+{{- $link := .Get "link" -}}
+
+{{- $external := hasPrefix $link "http" -}}
+{{- $href := cond (strings.HasPrefix $link "/") ($link | relURL) $link -}}
+
+{{- if hasPrefix $image "/" -}}
+  {{- $image = relURL (strings.TrimPrefix "/" $image) -}}
+{{- end -}}
+
+<a
+  {{ with $link }}href="{{ $href }}" {{ with $external }} target="_blank" rel="noreferrer"{{ end }}{{ end }}
+  {{ with $style }}style="{{ . | safeCSS }}"{{ end }}
+  class="{{ $class }} hextra-feature-card not-prose hx:block hx:relative hx:overflow-hidden hx:rounded-xl"
+>
+  <div class="hx:relative hx:w-full hx:p-6 hx:flex hx:gap-4">
+    {{ with $icon -}}
+      <div class="hx:flex-shrink-0 hx:pt-0.5 hx:text-primary-600 hx:dark:text-primary-400">
+        {{- partial "utils/icon.html" (dict "name" . "attributes" "height=1.5rem") -}}
+      </div>
+    {{ end -}}
+    <div>
+      <h3 class="hx:text-lg hx:font-semibold hx:leading-6 hx:mb-1">{{ $title }}</h3>
+      <p class="hx:text-gray-500 hx:dark:text-gray-400 hx:text-sm hx:leading-6">{{ $subtitle | markdownify }}</p>
+    </div>
+  </div>
+  {{- with $image -}}
+    <img src="{{ . }}" class="hx:absolute hx:max-w-none {{ $imageClass }}" alt="{{ $title }}" />
+  {{- end -}}
+</a>

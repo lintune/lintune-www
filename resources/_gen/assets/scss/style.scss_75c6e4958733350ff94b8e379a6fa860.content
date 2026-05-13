@@ -11049,4 +11049,11 @@ span.menu-icon {
   background-size: cover;
   padding-top: 70px; }
 
+.logo svg {
+  height: 40px; }
+
+#topnav .logo .big,
+#topnav .logo .small {
+  height: 40px; }
+
 /*# sourceMappingURL=style.css.map */

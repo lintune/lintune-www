@@ -1,0 +1,51 @@
+baseURL: 'https://lintune.xyz/'
+locale: en-us
+title: lintune
+enableEmoji: true
+enableRobotsTXT: true
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+params:
+  description: "Self-hosted identity, mail, and storage. One platform."
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/lintune-mark-light.svg
+      dark: images/lintune-mark-dark.svg
+      link: /
+      width: 36
+      height: 36
+  footer:
+    displayCopyright: true
+    displayPoweredBy: false
+  theme:
+    default: light
+    displayToggle: true
+  banner:
+    content: "heavy alpha — not for production use"
+
+menu:
+  main:
+    - name: Docs
+      url: /docs
+      weight: 10
+    - name: GitHub
+      url: https://github.com/lintune
+      weight: 20
+      params:
+        icon: github
+    - name: Toggle theme
+      weight: 30
+      params:
+        type: theme-toggle
