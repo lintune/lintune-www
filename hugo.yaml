@@ -18,22 +18,23 @@ markup:
 params:
   description: "Self-hosted identity, mail, and storage. One platform."
   navbar:
-    displayTitle: true
+    displayTitle: false
     displayLogo: true
     logo:
-      path: images/lintune-mark-light.svg
-      dark: images/lintune-mark-dark.svg
+      path: images/lintune-lockup-light.svg
+      dark: images/lintune-lockup-dark.svg
       link: /
-      width: 36
-      height: 36
+      width: 300
+      height: 80
   footer:
     displayCopyright: true
     displayPoweredBy: false
   theme:
-    default: light
+    default: system
     displayToggle: true
   banner:
     content: "heavy alpha — not for production use"
+  externalLinkDecoration: false
 
 menu:
   main:
