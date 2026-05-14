@@ -1,5 +1,21 @@
-# Website for Lintune
+# lintune-www
 
-## Using Hugo and LotusDocs
+Marketing website and documentation for [Lintune](https://lintune.xyz) — an open-source, self-hosted MSP platform.
 
-## Push to git to update website
+Built with [Hugo](https://gohugo.io/) and the [Hextra](https://imfing.github.io/hextra/) theme.
+
+## Development
+
+```bash
+hugo server
+```
+
+## Deployment
+
+Push to the `main` branch. The site is deployed automatically.
+
+## Structure
+
+- `content/docs/` — product documentation
+- `content/` — marketing pages
+- `static/` — images and other static assets
