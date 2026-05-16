@@ -39,3 +39,29 @@ p.lintune-stack-links a:hover {
 .hextra-banner button {
   color: #1c1917 !important;
 }
+
+.lintune-hero-layout {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.lintune-hero-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.lintune-hero-image {
+  display: none;
+  flex: 0 0 42%;
+}
+
+@media (min-width: 768px) {
+  .lintune-hero-image {
+    display: block;
+  }
+}
+
+.lintune-hero-image .hero-dark { display: none; }
+.dark .lintune-hero-image .hero-light { display: none; }
+.dark .lintune-hero-image .hero-dark { display: block; }

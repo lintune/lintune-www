@@ -3,8 +3,11 @@ title: lintune
 layout: hextra-home
 ---
 
+<div class="lintune-hero-layout">
+<div class="lintune-hero-content">
+
 {{< hextra/hero-section style="font-size: 62px; line-height: 1.05; letter-spacing: -0.035em;" >}}
-Self-hosted<br>identity, mail, and<br>storage.
+Self-hosted identity,<br>mail, and storage<br>for MSPs.
 {{< /hextra/hero-section >}}
 
 <div style="margin-top: 1rem;">
@@ -31,6 +34,13 @@ One platform. Install Keycloak, Mailcow, and Nextcloud in minutes — wired to s
 <a href="https://uptimekuma.org/"><strong>uptime-kuma</strong></a> ·
 open source · <a href="https://github.com/lintune/lintune-admin/blob/dev/LICENSE"><strong>MIT</strong></a>
 </p>
+
+</div>
+<div class="lintune-hero-image">
+  <img class="hero-light" src="/images/lintune-hero-D.svg" alt="Lintune platform illustration" style="width: 100%; height: auto;" />
+  <img class="hero-dark" src="/images/lintune-hero-DK.svg" alt="Lintune platform illustration" style="width: 100%; height: auto;" />
+</div>
+</div>
 
 <div style="margin-top: 3rem; width: 100%;">
 {{< hextra/feature-grid >}}
