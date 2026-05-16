@@ -17,7 +17,7 @@ One platform. Install Keycloak, Mailcow, and Nextcloud in minutes — wired to s
 </div>
 
 <div class="not-prose" style="margin-top: 1.75rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
-  <a href="/docs/install" style="display:inline-flex; align-items:center; gap:0.45rem; background:#16a34a; color:#fff; font-weight:600; font-size:0.9375rem; padding:0.65rem 1.3rem; border-radius:6px; text-decoration:none;">
+  <a href="/docs/admin/installation" style="display:inline-flex; align-items:center; gap:0.45rem; background:#16a34a; color:#fff; font-weight:600; font-size:0.9375rem; padding:0.65rem 1.3rem; border-radius:6px; text-decoration:none;">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" style="width:1.1rem;height:1.1rem;flex-shrink:0;"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
     Install in 5 minutes
   </a>
